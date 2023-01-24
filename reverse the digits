@@ -1,0 +1,14 @@
+#include<stdio.h>
+main()
+{
+int rev=0,rd,n;
+printf("enter an integer:");
+scanf("%d",&n);
+while(n!=0)
+{
+rd=n%10;
+rev=rev*10+rd;
+n/=10;
+}
+printf("%d",rev);
+}

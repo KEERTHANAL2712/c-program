@@ -1,0 +1,15 @@
+#include<stdio.h>
+long int multiplynumbers(int n);
+int main()
+{
+int n;
+printf("enter the positive integer:  \n");
+scanf("%d",&n);
+printf("factorial of %d = %ld",n,multiplynumbers(n));
+}
+long int multiplynumbers(int n)
+{if(n>=1)
+return n*multiplynumbers(n-1);
+else
+return 1;
+}

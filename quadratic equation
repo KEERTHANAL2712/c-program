@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+float a,b,c,q1,q2;
+printf("enter the value of a:\n");
+scanf("%f",&a);
+printf("enter the value of b:\n");
+scanf("%f",&b);
+printf("enter the value of c:\n");
+scanf("%f",&c);
+q1=(-b+sqrt((b*b)-(4*a*c)))/2*a;
+q2=(-b-sqrt((b*b)-(4*a*c)))/2*a;
+printf("the value of q1:%f \n",q1);
+printf("the value of q2:%f \n",q2);
+}

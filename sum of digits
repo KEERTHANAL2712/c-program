@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+int n,s,k,q;
+s=0;
+scanf("%d",&n);
+do
+{k=n%10;
+n/=10;
+s=s+k;
+}while(n>0);
+printf("%d",s);
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+void dectohexa(int dec)
+{int temp;
+if(dec==0)
+return;
+dectohexa(dec/16);
+temp=(temp=dec%16)>=10 ? temp+55:temp+48;
+printf("%c",temp);
+}
+int main()
+{
+int n;
+printf("enter a decimal number: \n");
+scanf("\%d",&n);
+printf("hexadecimal:");
+dectohexa(n);
+}
